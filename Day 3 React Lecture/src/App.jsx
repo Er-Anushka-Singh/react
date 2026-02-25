@@ -1,3 +1,124 @@
+
+import Header from "./Topic-21 React Router Part-1/Header";
+import {Outlet} from "react-router-dom"
+import "./Topic-21 React Router Part-2/style.css"
+
+const App =()=>{
+  
+  return( 
+  <div id="app-component" >  
+    <Header/>
+    <Outlet/>
+    </div>
+  );
+};
+
+export default App;
+
+
+/*
+
+import { useState ,useEffect} from "react";
+import Demo1 from "./Topic-11 Advance useEffect/Demo1"
+
+
+const App =()=>{
+     const [count ,setCount]=useState(0);
+
+     useEffect(()=>{
+       console.log("App useEffect");
+     },[])
+ 
+  return( 
+  <div id="app-component">
+    <h1>App Component</h1>
+    <div id="app-container">
+      <h3>Count : {count}</h3>
+      <button className='btn' onClick={()=> setCount(count +1)}>Add</button>
+       
+       <Demo1/>
+       </div>
+  </div>
+  );
+};
+
+export default App;
+
+
+
+
+import Demo from "./Topic-10 useEffect/Demo"
+import Demo2 from "./Topic-10 useEffect/Demo2";
+
+
+const App =()=>{
+ 
+ 
+  return <div>
+  <Demo2/>
+  </div>
+}
+
+export default App;
+
+
+import Demo3 from "./Topic-9 useRef Hook/Demo3";
+
+
+const App =()=>{
+ 
+ 
+  return <div>
+   {/* <Demo/> }
+   {/* <Demo2/> }
+   <Demo3/>
+  </div>
+}
+
+export default App;
+
+
+
+import Counter from "./Topic-8 Rules of useState/Counter";
+
+const App =()=>{
+ 
+ 
+  return <div>
+   <Counter/>
+  </div>
+}
+
+export default App;
+
+
+
+
+import Counter from "./Topic-7 useState Hook/Counter";
+
+const App =()=>{
+ 
+ 
+  return <div>
+   <Counter/>
+  </div>
+}
+
+export default App;
+
+import Counter from "./Topic-7 useState Hook/Counter";
+
+const App =()=>{
+ 
+  return <div>
+   <Counter/>
+  </div>
+}
+
+export default App;
+
+
+
 import Parent from "./Topic-6 Synthetic Event/Parent";
 
 const App =()=>{
@@ -9,7 +130,7 @@ const App =()=>{
 export default App;
 
 
-/*
+
 import Parent from "./Topic-4 Props Immutable/Parent";
 
 const App =()=>{
