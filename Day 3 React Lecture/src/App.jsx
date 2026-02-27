@@ -1,5 +1,29 @@
+import {Outlet} from "react-router-dom";
+import "./index.css"
 
-import Header from "./Topic-21 React Router Part-1/Header";
+import Header from "./Topic-22 useParams/pages/Header";
+
+
+const App = () => {
+  return (
+    <div id="app-component">
+      <Header/>
+      <main>
+        <Outlet/>
+      </main>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+/*
+import Header from "./Topic-21 React Router Part-2/Header";
 import {Outlet} from "react-router-dom"
 import "./Topic-21 React Router Part-2/style.css"
 
@@ -14,7 +38,7 @@ const App =()=>{
 };
 
 export default App;
-
+*/
 
 /*
 
